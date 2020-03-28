@@ -1,5 +1,11 @@
 # README
 DB設計
+![image](https://user-images.githubusercontent.com/60636597/77817792-20fc2680-7111-11ea-8d83-bcb91fcdd3f5.png)
+
+
+
+
+
 # フリマアプリ DB設計
 ## Usersテーブル
 |Column|Type|Options|
