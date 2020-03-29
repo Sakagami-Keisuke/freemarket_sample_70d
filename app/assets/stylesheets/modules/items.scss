@@ -100,7 +100,6 @@
       background-color: white;
       width: 700px;
       height: 170px;
-
       .item-price-box{
         display: flex;
         padding-top: 30px;
@@ -146,38 +145,48 @@
     padding-bottom: 30px;
     &__box {
       .item__affix {
-        display: flex;
-        padding-left: 130px;
-        padding-top: 30px;
         &__edit {
+          line-height: 45px;
           background-color: #3ccace;
-          width: 200px;
+          width: 350px;
           height: 45px;
           text-align: center;
-          padding-top: 10px;
-          margin-right: 10px;
+          margin: 0px auto;
+          margin-bottom: 20px;
           border-radius: 4px;
         }
         &__delete {
-
+          line-height: 45px;
+          margin: 0px auto;
+          margin-bottom: 20px;
           background-color: #3ccace;
-          width: 200px;
+          width: 350px;
           height: 45px;
           text-align: center;
-          padding-top: 10px;
           border-radius: 4px;
-
           input {
             background-color: #3ccace;
-            width: 200px;
-            height: 55px;
+            width: 350px;
+            height: 45px;
             text-align: center;
             border-radius: 4px;
             color: white;
             font-size: 24px;
             font-weight: bold;
           }
-
+        }
+        &__root{
+          line-height: 45px;
+          margin: 0px auto;
+          margin-bottom: 20px;
+          background-color: #3ccace;
+          width: 350px;
+          height: 55px;
+          text-align: center;
+          border-radius: 4px;
+          color: white;
+          font-size: 24px;
+          font-weight: bold;
         }
       }
       .item__affix2 {

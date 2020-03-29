@@ -535,7 +535,6 @@
           display: flex;
           justify-content: space-between;
           padding: 0px 40px 15px 40px;
-          
           .form__item-price-label {
             margin: auto;
             width: 620px;
@@ -586,8 +585,7 @@
         .form__item--submit {
           text-align: center;
           padding-bottom: 32px;
-          padding-top: 100px;
-          
+          padding-top: 100px; 
           .form__submit {
             background-color: #ea352d;
             color: #fff;
@@ -639,6 +637,33 @@
       font-size: 12px;
     }
   }
+
+// items/edit ボタンの追加修正----------------------------------------
+
+.form__item--link{
+  display: flex;
+  justify-content: center;
+ }
+  .re-edit-btn{
+    width: 380px;
+    height: 60px;
+    background-color: #3CCACE;
+    color: white;
+    font-size: 26px;
+    border-radius: 4px;
+    margin: 5px 0 5px 0;
+  }
 }
 
-
+.root-btnA{
+  text-align: center;
+  text-decoration: none;
+  line-height: 60px;
+  width: 380px;
+  height: 60px;
+  background-color: #3CCACE;
+  color: white;
+  font-size: 24px;
+  border-radius: 4px;
+  margin: 5px 0 5px 0;
+}

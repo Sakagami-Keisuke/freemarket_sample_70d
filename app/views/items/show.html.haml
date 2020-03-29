@@ -3,7 +3,7 @@
     %h1
 
       %a.signUp-topIcon
-        = image_tag "logo.png" 
+        = image_tag "logo.png"
   .item-box
     .item-name
       = @item.name
@@ -79,23 +79,21 @@
 
       .item-dicription-content
         .item-description-text
-          コメント欄
+          商品の説明
         .item-description-inner
           %p.description
             = @item.introduction
   .buybtn
     .buybtn__box
-
-
-
       -if user_signed_in?
         - if @item.seller_id == current_user.id
           .item__affix
             .item__affix__edit
               = link_to '商品の編集', edit_item_path(@item), data: {"turbolinks" => false}
             .item__affix__delete
-
               = link_to '商品の削除', item_path(@item),method: :delete
+            .item__affix__root
+              = link_to "トップページにもどる", root_path, class: "root-btnA"
         - else
           .item__affix2
             .item__affix2__buy
@@ -106,20 +104,19 @@
             = link_to "ログインして購入",root_path
 
 
-
   %footer.show-itemFooter
     %nav
       %ul
         %li
-          = link_to root_path do  
-            = "プライバシーポリシー"  
+          = link_to root_path do
+            = "プライバシーポリシー"
         %li
-          = link_to root_path do  
-            = "メルカリ利用規約"  
+          = link_to root_path do
+            = "メルカリ利用規約"
         %li
-          = link_to root_path do  
-            = "特定商取引に関する表記"  
+          = link_to root_path do
+            = "特定商取引に関する表記"
       %a.logo-img
-        = image_tag "logo-white.png" 
+        = image_tag "logo-white.png"
       %a.logo-text
         %Small © Furima

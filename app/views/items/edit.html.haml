@@ -100,9 +100,11 @@
             %span ¥
             = f.text_area :price, placeholder: "0"
         .form__item--submit
-          = f.submit "編集する", class: 'sell__about__bottom-btn submit'
+          = f.submit "更新する", class: 're-edit-btn'
         .form__item--link
-          = link_to "もどる", item_path, class: "form__btn" 
+          -# = link_to "もどる", item_path, class: "form__btn" 
+          = link_to "編集をやめる", item_path, class: "root-btnA"
+
         %p 禁止されている行為および出品物を必ずご確認ください。偽ブランド品や盗品物などの販売は犯罪であり、法律により処罰される可能性があります。 また、出品をもちまして加盟店規約に同意したことになります。
   .item-footer
     %p プライバシーポリシー　メルカリ利用規約　特定商取引に関する表記
