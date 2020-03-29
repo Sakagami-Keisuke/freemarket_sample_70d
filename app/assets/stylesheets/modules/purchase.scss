@@ -240,7 +240,7 @@ body {
     }
   }
 }
-// ここから show----------------------------------
+// ここから card show----------------------------------
 
 body {
   margin: 0;
@@ -286,7 +286,11 @@ body {
             margin: 5px 0 5px 0;
           }
           .deletebtn{
-            color: rgb(121, 45, 45);
+            width: 100px;
+            height: 20px;
+            font-size: 14px;
+            background-color: rgb(181, 218, 219);
+            color: rgb(197, 35, 35);
           }
         }
 
@@ -310,11 +314,14 @@ body {
       }
     }
     .c-futter {
-      height: 180px;
       .c-futter-texts {
         display: flex;
-        margin-left: 750px;
+        justify-content: center;
+        ul {
+          display: block;
+        }
         li {
+          display: block;
           font-size: 13px;
           padding-left: 10px;
           margin: 30px 0;
